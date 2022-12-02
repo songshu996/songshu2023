@@ -7,6 +7,11 @@
     <groupId>org.example</groupId>
     <artifactId>songshu_syt</artifactId>
     <version>1.0</version>
+    <modules>
+        <module>yygh_common</module>
+        <module>yygh_service</module>
+        <module>yygh_model</module>
+    </modules>
     <packaging>pom</packaging>
 
 
