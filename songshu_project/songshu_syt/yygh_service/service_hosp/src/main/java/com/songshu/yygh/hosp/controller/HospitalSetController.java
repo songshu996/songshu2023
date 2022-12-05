@@ -3,10 +3,7 @@ package com.songshu.yygh.hosp.controller;
 import com.songshu.yygh.hosp.service.HospitalSetService;
 import com.songshu.yygh.model.hosp.HospitalSet;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,8 +26,9 @@ public class HospitalSetController {
 
 
     @DeleteMapping("{id}")
-    public Boolean de(){
-        return false; //dfsvsd
+    public Boolean removeHospSet(@PathVariable Long id){
+        boolean removeFlag = hospitalSetService.removeById(id);
+        return removeFlag;
     }
 
 

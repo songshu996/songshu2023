@@ -10,20 +10,20 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <artifactId>yygh_service</artifactId>
+    <version>1.0</version>
     <dependencies>
 
         <dependency>
             <groupId>com.songshu</groupId>
-            <artifactId>yygh_common</artifactId>
+            <artifactId>service_util</artifactId>
             <version>1.0</version>
         </dependency>
+
         <dependency>
             <groupId>com.songshu</groupId>
             <artifactId>yygh_model</artifactId>
             <version>1.0</version>
         </dependency>
-
-
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
